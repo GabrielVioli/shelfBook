@@ -1,0 +1,11 @@
+services:
+    app:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: shelfbook_app
+        ports:
+            - "8000:8000"
+        volumes:
+            - .:/var/www
+        command: php artisan serve --host=0.0.0.0 --port=8000
