@@ -19,6 +19,6 @@ ROute::delete("book/{id}", [BookController::class, 'destroy']);
 Route::get("genre", [GenrerController::class, 'index']);
 Route::post("genre", [GenrerController::class, 'store']);
 Route::get("genre/{id}", [GenrerController::class, 'show']);
-Route::put("genrer/{id}", [GenrerController::class, 'update']);
-Route::delete("genrer/{id}", [GenrerController::class, 'destroy']);
+Route::put("genre/{id}", [GenrerController::class, 'update']);
+Route::delete("genre/{id}", [GenrerController::class, 'destroy']);
 
